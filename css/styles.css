@@ -252,6 +252,43 @@ flex-grow: 1;
   opacity: 0.2;
 }
 
+/* IMG-TEXT-INFO */
+
+.img-text-info__picture {
+  display: block;
+}
+
+.img-txt-info__img {
+  display: block;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.img-text-info__info {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.img-text-info__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: var(--accent-fomt-family);
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+}
+
+.img-text-info__description {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 2;
+}
+
+
+
 /* SITE-HEADER */
 .site-header {
   position: relative;
@@ -374,6 +411,32 @@ flex-grow: 1;
   }
 }
 
+@media only screen and (min-width: 550px) {
+  .img-text-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .img-text-info:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .img-txt-info__img {
+    margin-bottom: 0;
+  }
+
+  .img-text-info__info {
+    width: 60%;
+    margin-left: 32px;
+  }
+
+  .img-text-info:nth-child(even)  .img-text-info__info {
+    margin-left: 0;
+    margin-right: 32px;
+  }
+
+}
+
 @media only screen and (min-width: 700px) {
 
   .site-footer {
@@ -405,7 +468,6 @@ flex-grow: 1;
     margin-bottom: 0;
     margin-right: 42px;
   }
-
 
 }
 
@@ -475,6 +537,36 @@ flex-grow: 1;
     margin-bottom: 48px;
   }
 
+  .img-text-info {
+    align-items: center;
+  }
+
+
+
+  .img-text-info__picture {
+    flex-shrink: 0;
+  }
+
+  .img-text-info__img {
+    flex-shrink: 0;
+    width: 340px;
+    height: 315px;
+    margin-bottom: 0;
+    margin-right: 70px;
+    object-fit: cover;
+  }
+
+  .img-text-info__info {
+    flex-grow: 1;
+    width: auto;
+    margin-left: 69px;
+  }
+
+  .img-text-info:nth-child(even) .img-text-info__info {
+    margin-left: 0;
+    margin-right: 69px;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -498,4 +590,36 @@ flex-grow: 1;
   .site-header {
     padding-bottom: 54px;
   }
+
+  .img-text-info {
+    align-items: stretch;
+  }
+
+  .img-txt-info__img {
+   width: 540px;
+   height: 500px;
+   margin-right: 0;
+  }
+
+  .img-text-info__info {
+    padding-top: 103px;
+    padding-bottom: 103px;
+    margin-left: 125px;
+    margin-right: 96px;
+  }
+
+  .img-text-info:nth-child(even) .img-text-info__info {
+    margin-right: 125px;
+    margin-left: 96px;
+  }
+
+  .img-text-info__title {
+    margin-bottom: 28px;
+  }
+
+  .img-text-info__description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
 }

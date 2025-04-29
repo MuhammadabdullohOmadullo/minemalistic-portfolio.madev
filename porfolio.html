@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Abdulloh`s Portfolio</title>
+  <title>Muhammad Abdulloh`s Portfolio list</title>
 
   <!-- Styles  -->
 <link rel="stylesheet" href="css/normalize.css">
@@ -20,8 +20,8 @@
             <!-- SITENAV -->
         <nav class="site-header__sitenav sitenav sitenav--site-header">
             <ul class="siteenav__list">
-              <li class="sitenav__item sitenav__item--active"><a class="sitenav__link" href="index.html">HOME</a></li>
-              <li class="sitenav__item"><a class="sitenav__link" href="porfolio.html">PORTFOLIO</a></li>
+              <li class="sitenav__item"><a class="sitenav__link" href="index.html">HOME</a></li>
+              <li class="sitenav__item sitenav__item--active"><a class="sitenav__link" href="porfolio.html">PORTFOLIO</a></li>
               <li class="sitenav__item"><a class="sitenav__link" href="contact.html">CONTACT ME</a></li>
             </ul>
            </nav>
@@ -32,35 +32,28 @@
 
  <!-- MAIN-CONTENT -->
   <main class="main-content">
-
-    <!-- HERO -->
-     <div class="hero">
-      <div class="hero__container container">
-        <picture class="hero__picture">
-          <source srcset="img/hero-laptob.jpg 1x, img/hero-laptob@2x.jpg 2x" media="(min-width:1024px)">
-          <source srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x" media="(min-width:500px)">
-          <img class="hero__img" src="img/hero-img.jpg" alt="" width="311" height="271" srcset="img/hero-img.jpg 1x, img/hero-img@2x.jpg 2x">
-        </picture>
-
-        <div class="hero__text-wrapper">
-          <h1 class="hero__heading">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
-
-        <a class="cta-button" href="#">
-          <span class="cta-button__inner">
-            <span class="cta-button__append">
-              <svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1 9 8 4 8-4" stroke="currentColor"/><path opacity=".5" d="m1 5 8 4 8-4" stroke="currentColor"/><path opacity=".25" d="m1 1 8 4 8-4" stroke="currentColor"/></svg>
-            </span>
-            <span class="cta-button__text">About me</span>
-          </span>
-        </a>
-        </div>
-      </div>
-     </div>
-
-    <!-- <div class="container">
+    <h1 class="visually-hidden">Portfolio</h1>
+    <h2 class="visually-hidden">Project list</h2>
+  <!-- <div class="container">
       <a class="button" href="#">Go to the portfolio</a>
       <button class="button" type="button">view projects</button>
     </div> -->
+
+    <div class="container">
+      <div class="img-text-info">
+        <picture class="img-text-info__picture">
+          <source srcset="img/manage-preview-desktop.jpg 1x, img/manage-preview-desktop@2x.jpg 2x" media="(min-width:1180px)">
+          <img class="img-txt-info__img" src="img/manage-preview.jpg" alt="Preview of Manage project" srcset="img/manage-preview.jpg 1x, img/manage-preview@2x.jpg 2x">
+        </picture>
+
+        <div class="img-text-info__info">
+          <h3 class="img-text-info__title">Manage</h3>
+          <p class="img-text-info__description">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+          <a class="button" href="project-info-manage.html">View project</a>
+        </div>
+      </div>
+    </div>
+
   </main>
 
 
